@@ -2,37 +2,78 @@
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
     <div class="footer-col-wrapper">
+
       <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
+        <h4 class="footer-heading">About Us</h4>
+        <p>
+          Taskbob has a vision of creating happy households. <br>
+          Want things fixed? Just tap and relax. <br>
+          Taskbob will manage it all. Solution to all your household <br>
+           problems is now a lot more convenient, fast and reliable.
+        </p>
+        <p>
+          <a style="display: block" href="http://maps.google.com/maps?q=19.117706,72.888930" target="_blank" class="footer-link">
+            {% icon fa-map-marker %}
+            301, ICC Chambers,<br>
+            Near Gurukrupa Hotel,<br>
+            Saki Vihar Road,<br>
+            Andheri (E), Mumbai 400076<br>
+          </a>
+        </p>
+        <div class="footer-social">
+          <a class="footer-link" href="https://www.facebook.com/taskbob" target="_blank">{% icon fa-facebook-square %}</a>
+          <a class="footer-link" href="https://twitter.com/taskbob" target="_blank">{% icon fa-twitter-square %}</a>
+          <a href="{{ "/feed.xml" | prepend: site.baseurl }}">{% icon fa-rss-square %}</a>
+        </div>
+        <div>&copy; Taskbob 2015</div>
       </div>
 
       <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
+        <h4 class="footer-heading">Our Services</h4>
+        <div><a class="footer-link" href="/electrician" target="_blank">Electrician</a></div>
+        <div><a class="footer-link" href="/plumber" target="_blank">Plumber</a></div>
+        <div><a class="footer-link" href="/carpenter" target="_blank">Carpenter</a></div>
+        <div><a class="footer-link" href="/ac-repair" target="_blank">AC Repair</a></div>
+        <div><a class="footer-link" href="/computer-repair" target="_blank">Computer Repair</a></div>
+        <div><a class="footer-link" href="/washing-machine-repair" target="_blank">Washing Machine Repair</a></div>
+        <div><a class="footer-link" href="/refrigerator-repair" target="_blank">Refrigerator Repair</a></div>
+        <div><a class="footer-link" href="/tv-repair" target="_blank">TV Repair</a></div>
+        <div><a class="footer-link" href="/microwave-repair" target="_blank">Microwave Repair</a></div>
+        <div><a class="footer-link" href="/music-system-repair" target="_blank">Music System Repair</a></div>
+        <div><a class="footer-link" href="/full-home-deep-cleaning" target="_blank">Home Deep Cleaning</a></div>
+        <div><a class="footer-link" href="/customized-deep-cleaning" target="_blank">Customized Deep Cleaning</a></div>
+        <div><a class="footer-link" href="/car-spa" target="_blank">Car Spa</a></div>
+        <div><a class="footer-link" href="/maid-on-demand" target="_blank">Maid on Demand</a></div>
+        <div><a class="footer-link" href="/driver-local" target="_blank">Driver-Local</a></div>
+        <div><a class="footer-link" href="/driver-outstation" target="_blank">Driver-Outstation</a></div>
       </div>
 
       <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
+        <h4 class="footer-heading">Company</h4>
+        <div><a class="footer-link" href="http://taskbob.com/careers" target="_blank">Careers</a></div>
+        <div><a class="footer-link" href="http://taskbob.com/contact" target="_blank">Contact Us</a></div>
+        <div><a class="footer-link" href="http://taskbob.com/privacy" target="_blank">Privacy</a></div>
+        <div><a class="footer-link" href="http://taskbob.com/terms" target="_blank">Terms &amp; Conditions</a></div>
+        <div><a class="footer-link" href="http://taskbob.com/faq" target="_blank">FAQs</a></div>
+
+        <br>
+        <br>
+
+        <p>
+          <a id="app-link-4" class="app-dl-link" href="http://taskbob.com/mobile/android">
+            <img src="{{ site.baseurl }}/media/play_store.png" alt="android"/>
+          </a>
+        </p>
+
+        <p>
+          <a id="ios-link-2" class="app-dl-link" href="http://taskbob.com/mobile/ios">
+            <img src="{{ site.baseurl }}/media/app_store.png" alt="ios"/>
+          </a>
+        </p>
+
       </div>
 
-      <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
     </div>
 
   </div>

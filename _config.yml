@@ -20,6 +20,12 @@ github_username:  taskbob
 # Build settings
 markdown: kramdown
 
+# Plugin gems
+gems:
+  - jekyll-paginate
+
+paginate: 5
+
 # Prose.io settings
 prose:
   rooturl: '_posts'

@@ -2,20 +2,26 @@
  * Site header
  */
 .site-header {
-    // border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
+    border: 0;
+    border-bottom-width: 1px;
+    border-image: linear-gradient(90deg, rgba(0,0,0,0), rgba(0,0,0,0.1) 50%, rgba(0,0,0,0) 100%) 5%;
     min-height: 56px;
 
     // Positioning context for the mobile navigation icon
     position: relative;
+
+    & > .wrapper {
+        max-width: 1000px;
+    }
 }
 
 .site-icon {
     margin-bottom: 0;
     float: left;
+    height: 100px;
 
     & > svg {
-        height: 100px;
+        height: 100%;
     }
 }
 
@@ -28,7 +34,7 @@
 
 .site-nav {
     float: right;
-    line-height: 56px;
+    line-height: 100px;
 
     .menu-icon {
         display: none;
@@ -42,6 +48,13 @@
         &:not(:last-child) {
             margin-right: 20px;
         }
+    }
+
+    .link-btn {
+        color: $text-color-light;
+        background-color: $brand-primary;
+        padding: 15px 25px;
+        border-radius: 3px;
     }
 
     @include media-query($on-palm) {
@@ -95,18 +108,69 @@
 }
 
 
+.site-image {
+    background-image: url('../media/taskbob-blog.png');
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    position: relative;
+
+    & > .site-name {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-60%) translateY(-50%);
+
+        border: 1px solid $grey-color-light;
+        border-radius: 15px;
+
+        padding: 10px 30px;
+
+        background-color: $background-color;
+
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: bold;
+        font-family: monospace;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+    }
+}
+
 
 /**
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
+    background-color: $dark-bg;
+    color: $text-color-light;
     padding: $spacing-unit 0;
+
+    & > .wrapper {
+        max-width: 1000px;
+    }
 }
 
 .footer-heading {
-    font-size: 18px;
+    font-size: 16px;
+    color: $text-color-light;
     margin-bottom: $spacing-unit / 2;
+    text-transform: uppercase;
+}
+
+.footer-link {
+    color: $text-color-light-darken;
+
+    &:hover {
+        color: $text-color-light;
+    }
+}
+
+.footer-social {
+    font-size: 30px;
+}
+
+.app-dl-link > img {
+    max-width: 160px;
 }
 
 .contact-list,
@@ -117,7 +181,7 @@
 
 .footer-col-wrapper {
     font-size: 15px;
-    color: $grey-color;
+    color: $text-color-light-darken;
     margin-left: -$spacing-unit / 2;
     @extend %clearfix;
 }
@@ -129,18 +193,18 @@
 }
 
 .footer-col-1 {
-    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-    width:         calc(35% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
+    width:         calc(45% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-2 {
-    width: -webkit-calc(20% - (#{$spacing-unit} / 2));
-    width:         calc(20% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(30% - (#{$spacing-unit} / 2));
+    width:         calc(30% - (#{$spacing-unit} / 2));
 }
 
 .footer-col-3 {
-    width: -webkit-calc(45% - (#{$spacing-unit} / 2));
-    width:         calc(45% - (#{$spacing-unit} / 2));
+    width: -webkit-calc(25% - (#{$spacing-unit} / 2));
+    width:         calc(25% - (#{$spacing-unit} / 2));
 }
 
 @include media-query($on-laptop) {
@@ -171,10 +235,6 @@
  */
 .page-content {
     padding: $spacing-unit 0;
-}
-
-.page-heading {
-    font-size: 20px;
 }
 
 .post-list {
