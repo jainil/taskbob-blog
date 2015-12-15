@@ -12,7 +12,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Blog of taskbob.com, the go-to destination for getting reliable home
   services (handymen, appliance repair, deep cleaning, car spa,
   temporary maids) in Mumbai
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "http://taskbob.com" # the base hostname & protocol for your site
 twitter_username: taskbob
 github_username:  taskbob
