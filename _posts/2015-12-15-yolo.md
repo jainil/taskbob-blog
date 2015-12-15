@@ -1,8 +1,10 @@
 ---
 layout: post
-tags: null
-published: false
+tags: 
+  - "null"
+published: true
 ---
+
 
 ## A New Post
 
